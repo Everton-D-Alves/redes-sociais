@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Largura do iframe: */
+img{
+    width: 100vw;
+}
+/* Esconder barra de rolagem */
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+/* Mostrar acesso embaixo: 'display: block;': */
+a{
+    background-color: orangered;
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none
+}
+a:hover{
+    background-color: orange;
+    text-decoration: underline;
+}

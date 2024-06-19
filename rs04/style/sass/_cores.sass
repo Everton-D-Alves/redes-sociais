@@ -1,0 +1,18 @@
+$cor: blue !default
+$tamanho: 1.5em 
+@if $tamanho < 1em and $tamanho > 2em 
+    @error "Tamanho de fonte inadequado!"
+@else 
+    @debug "Fonte com #{$tamanho} de tamanho"
+@mixin cor1 
+    @warn "Depreciado"
+    color: blue 
+    font-style: oblique 
+    font-size: 20pt
+    font-family: 'Courier New', Courier, monospace
+@mixin cor2 
+    $cor: black
+    color: $cor
+    font-style: normal
+    font-size: $tamanho
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif

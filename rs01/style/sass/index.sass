@@ -1,0 +1,34 @@
+@forward "total"
+@use "total" as t 
+* 
+    margin: 0px
+    padding: 0px
+    font-family: Arial, Helvetica, sans-serif
+html, body 
+    background-color: black
+    width: 100vw
+    height: 100vh
+body 
+    // background resume backgrounds: color, image, position, repeat, origin, clip, attachment.
+    background: url("../../img/fundo-madeira.jpg") no-repeat top center // image + repeat + position → eixo y, eixo x.
+    background-size: cover
+    background-attachment: fixed
+main
+    // background-color: green
+    height: 100vh 
+    // Colocar a posição atual:
+    position: relative
+    // Configuração para aonde irá ficar o telefone:
+section#telefone
+    background-color: blue
+    width: 311px
+    height: 627px
+    // Centralizar o telefone:
+    position: absolute
+    top: 50%
+    left: 50%
+    // Do lado direito da tela, fica metade para baixo. Para resolver isso, fará:
+    transform: translate(-50%, -50%)
+    // Acessar imagem:
+    background: url("../../img/frame-iphone.png") no-repeat
+    

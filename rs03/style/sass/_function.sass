@@ -1,0 +1,5 @@
+@function somar($numeros...)
+    $soma: 0
+    @each $num in $numeros
+        $soma: $soma + $num 
+    @return $soma
